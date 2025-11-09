@@ -1,25 +1,36 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React, { useEffect } from 'react'
-import { getHora } from "./utils/FuncionesHora"
+import { getLocalidadPorNombre } from './utils/FuncionesLocalidad'   // <-- ajusta la ruta si es distinta
 
 export default function App() {
 
   useEffect(() => {
+    async function probar() {
+      const resultado = await getLocalidadPorNombre("Granada");   // <-- prueba con cualquier ciudad
+      console.log("✅ Resultado Localidad:", resultado);
+    }
 
-    const instanteActual = Math.floor(Date.now() / 1000); 
-    const coords = { latitud: 37.17, longitud: -3.60 };
-
-    getHora(instanteActual, coords)
-      .then(resultado => console.log("✅ Resultado:", resultado))
-      .catch(error => console.log("❌ Error:", error));
-
+    probar();
   }, []);
 
   return (
-    <View>
-      <Text>App</Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>Prueba de getLocalidadPorNombre()</Text>
+      <Text style={styles.text}>Mira la consola de Expo / Metro 👀</Text>
     </View>
-  )
+  );
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#111"
+  },
+  text: {
+    color: "white",
+    fontSize: 16,
+    marginBottom: 8
+  }
+});
