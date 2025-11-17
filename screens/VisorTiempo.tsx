@@ -4,7 +4,7 @@ import VisorLocalidad from '../components/VisorLocalidad';
 import Tarjeta from '../components/Tarjeta';
 import { Localidad, Tiempo } from '../model/Tipos';
 
-interface VisorTiempoProps {
+type VisorTiempoProps = {
   localidad: Localidad;
   tiempo: Tiempo;
 }

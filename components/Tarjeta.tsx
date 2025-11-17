@@ -48,7 +48,7 @@ const ICONOS: IconosType = {
   nube: require('../assets/nube.png'),
 };
 
-interface TarjetaProps {
+type TarjetaProps = {
   textoPrincipal: string;
   textoSecundario: string;
   icono: EnumIcono;

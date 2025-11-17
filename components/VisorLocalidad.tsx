@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Image } from 'expo-image';
 import { Localidad } from '../model/Tipos';
 
-interface VisorLocalidadProps {
+type VisorLocalidadProps = {
   localidad: Localidad;
 }
 

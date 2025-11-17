@@ -4,7 +4,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 
 type IconoType = 'place' | 'gps-fixed';
 
-interface BotonProps {
+type BotonProps = {
   texto: string;
   icono: IconoType;
   onPress: () => void;

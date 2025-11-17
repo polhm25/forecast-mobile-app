@@ -2,7 +2,7 @@ import React from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';
 import Boton from '../components/Boton';
 
-interface Capa1Props {
+type Capa1Props = {
   nombre: string;
   setNombre: (nombre: string) => void;
   permisoUbicacion: boolean;

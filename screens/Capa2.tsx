@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, ActivityIndicator, StyleSheet } from 'react-native';
 
-interface Capa2Props {
+type Capa2Props = {
   estadoCarga: string;
 }
 
