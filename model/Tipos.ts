@@ -6,7 +6,7 @@ export type Coordenadas = {
 export type Localidad = {
     nombre: string;
     pais: string;
-    codigoPais: number;
+    codigoPais: string;
     region: string;
     comarca: string;
     coordenadas: Coordenadas;

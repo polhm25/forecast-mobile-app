@@ -43,7 +43,7 @@ export async function getLocalidadPorCoordenadas(coordenadas: Coordenadas): Prom
     return {
         nombre: "Desconocido",
         pais: "Desconocido",
-        codigoPais: 0,
+        codigoPais: "",
         region: "",
         comarca: "",
         coordenadas: { latitud: 0, longitud: 0 }
@@ -97,7 +97,7 @@ export async function getLocalidadPorNombre(nombre:string):Promise<Localidad> {
         return {
         nombre: "Desconocido",
         pais: "Desconocido",
-        codigoPais: 0,
+        codigoPais: "",
         region: "",
         comarca: "",
         coordenadas: { latitud: 0, longitud: 0 }
