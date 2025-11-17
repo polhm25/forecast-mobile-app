@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, ImageSourcePropType } from 'react-native';
+import { View, Text, StyleSheet, ImageSourcePropType } from 'react-native';
+import { Image } from 'expo-image';
 
 // Enum para los tipos de iconos disponibles
 export type EnumIcono =
