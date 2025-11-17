@@ -12,6 +12,7 @@
     "axios": "^1.13.2",
     "dayjs": "^1.11.19",
     "expo": "~54.0.23",
+    "expo-location": "~17.0.1",
     "expo-status-bar": "~3.0.8",
     "react": "19.1.0",
     "react-native": "^0.81.5"

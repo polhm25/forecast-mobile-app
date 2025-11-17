@@ -7,7 +7,7 @@ export default function App() {
   useEffect(() => {
     async function probar() {
       const resultado = await getLocalidadPorNombre("Granada");   // <-- prueba con cualquier ciudad
-      console.log("✅ Resultado Localidad:", resultado);
+      console.log("Resultado Localidad:", resultado);
     }
 
     probar();
